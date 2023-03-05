@@ -368,6 +368,10 @@ html{
     box-sizing: inherit;
 }
 
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
 .page{
     overflow: hidden;
     display: flex;
@@ -413,7 +417,6 @@ img{
 }
 
 .header__title{
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 30px;
@@ -425,7 +428,6 @@ img{
     margin-top: 20px;
     margin-right: 54px;
     margin-bottom: 25px;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 30px;
@@ -435,7 +437,7 @@ img{
 }
 
 .header__enter:hover, .header__enter:focus, .header__enter:active{
-    opacity: .75;
+    opacity: .50;
 }
 /* header css end */
 
@@ -447,7 +449,7 @@ img{
 .container__main{
     display: flex;
     flex-wrap: wrap;
-    width: 1195px;
+    width: 1236px;
     margin: 0 auto;
     margin-top: 80px;
     margin-bottom: 20px;
@@ -461,7 +463,6 @@ img{
 }
 
 .main__title{
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -481,7 +482,7 @@ img{
 }
 
 .main__menu-link:hover, .main__menu-link:focus, .main__menu-link:active{
-    opacity: .75;
+    opacity: .50;
 }
 
 .op__li-container{
@@ -493,7 +494,6 @@ img{
     width: 200px;
     height: 50px;
     text-align: center;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -504,7 +504,6 @@ img{
 }
 
 .op__li-choose{
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -536,7 +535,6 @@ img{
     background: transparent;
     border: none;
     color: #87ABE3;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -559,7 +557,7 @@ img{
 }
 
 .main__form-btn:hover, .main__form-btn:focus, .main__form-btn:active{
-    opacity: .75;
+    opacity: .50;
 }
 /* Контейнер текста задач */
 
@@ -575,7 +573,6 @@ img{
     padding: 15px 17px 0 17px;
     color: #87ABE3;
     border: none;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -603,7 +600,6 @@ img{
     background-color: #D9D9D9;
     border-radius: 14px;
     border: 1px solid #87ABE3;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 25px;
@@ -664,7 +660,7 @@ img{
 }
 
 .tasks__btn:hover, .tasks__btn:active, .tasks__btn:focus{
-    opacity: .80;
+    opacity: .50;
 }
 
 .btn__one{
@@ -675,9 +671,9 @@ img{
 /* Контейнер акт/вып */
 .btn__container{
     background: #D9D9D9;
-    width: 265px;
-    height: 50px;
-    margin-top: 75px;
+    width: 287px;
+    height: 60px;
+    margin-top: 70px;
     margin-left: 35px;
     border: 1px solid #87ABE3;
     border-radius: 14px;
@@ -686,13 +682,13 @@ img{
 }
 
 .btn__container-one{
-  padding: 14px 0 0 13px;
+  padding: 16px 0 0 13px;
   border-right: 1px solid;
   border-color: #87ABE3;
 }
 
 .btn__container-two{
-    padding: 14px 0 0 2px;
+    padding: 16px 0 0 2px;
 }
 
 .btn__act-done{
@@ -703,15 +699,13 @@ img{
 .btn__link{
     text-decoration: none;
     color: #87ABE3;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 22px;
-    line-height: 20px;
 }
 
 .btn__link:hover, .btn__link:focus, .btn__link:active{
-    opacity: .90;
+    opacity: .50;
 }
 /* Контейнер акт/вып */
 /* main css end */
@@ -725,7 +719,6 @@ img{
 
 .footer__text{
     text-align: center;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
@@ -736,7 +729,7 @@ img{
 
 
 /* Adaptive css start */
-@media screen and (max-width: 1205px) {
+@media screen and (max-width: 1240px) {
     .container__main{
         width: 100%;
         display: flex;
@@ -754,9 +747,23 @@ img{
         position: relative;
         left: 150px;
         background: #D9D9D9;
-        width: 265px;
+        width: 287px;
         height: 50px;
         margin: -50px 0 12px 0;
+    }
+
+    .btn__container-one{
+        padding: 5px 0 0 13px;
+        border-right: 1px solid;
+        border-color: #87ABE3;
+      }
+
+    .btn__act-done{
+        height: 35px;
+    }
+      
+    .btn__container-two{
+        padding: 5px 0 0 2px;
     }
 
     .main__wrapper-list{
@@ -798,7 +805,7 @@ img{
     
     .tasks__cont-second{
         margin-right: 13px;
-    
+        margin-top: 10px;
     }
     
     .tasks__btn{
@@ -823,7 +830,7 @@ img{
     }
 
     .tasks__cont-second{
-        margin-top: 10px;
+        margin-top: 25px;
     }
 }
 
@@ -873,7 +880,7 @@ img{
         position: relative;
         left: 140px;
         background: #D9D9D9;
-        width: 210px;
+        width: 222px;
         height: 50px;
         margin: -50px 0 12px 0;
     }
@@ -937,14 +944,18 @@ img{
     }
 
     .btn__container{
-        width: 170px;
+        width: 189px;
         height: 35px;
         top: 17px;
         left: 100px;
     }
 
+    .btn__act-done{
+        height: 19px;
+    }
+
     .btn__container-one{
-        padding: 6px 0 0 3px;
+        padding-left: 3px;
     }
 
     .btn__container-two{
@@ -1030,7 +1041,7 @@ img{
 
     .tasks__btn{
         width: 28px;
-        margin-top: 15px
+        margin-top: 1px
     }
 
     .btn__one{
@@ -1071,7 +1082,7 @@ img{
     }
 
     .btn__container{
-        width: 155px;
+        width: 170px;
         height: 30px;
         top: 24px;
         left: 85px;
@@ -1110,6 +1121,7 @@ img{
 
     .tasks__description{
         font-size: 8px;
+        line-height: 10px;
     }
 
     .tasks__cont-second{
@@ -1134,5 +1146,6 @@ img{
         width: 330px;
     }
 }   
+
 
 /* Adaptive css end */
